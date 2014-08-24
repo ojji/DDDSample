@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDSample.Domain", "DDDSamp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDSample.Repository.Memory", "DDDSample.Repository.Memory\DDDSample.Repository.Memory.csproj", "{42E7B834-49D1-4083-B0AE-F389C53CFA64}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDSample.ApplicationServices", "DDDSample.ApplicationServices\DDDSample.ApplicationServices.csproj", "{F8E7849C-12A9-4B17-BEE7-183590AD87AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{42E7B834-49D1-4083-B0AE-F389C53CFA64}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42E7B834-49D1-4083-B0AE-F389C53CFA64}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42E7B834-49D1-4083-B0AE-F389C53CFA64}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E7849C-12A9-4B17-BEE7-183590AD87AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E7849C-12A9-4B17-BEE7-183590AD87AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E7849C-12A9-4B17-BEE7-183590AD87AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E7849C-12A9-4B17-BEE7-183590AD87AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

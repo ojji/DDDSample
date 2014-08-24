@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8E7849C-12A9-4B17-BEE7-183590AD87AD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DDDSample.ApplicationServices</RootNamespace>
+    <AssemblyName>DDDSample.ApplicationServices</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Implementations\CustomerService.cs" />
+    <Compile Include="Implementations\ResourceNotFoundException.cs" />
+    <Compile Include="Interfaces\ICustomerService.cs" />
+    <Compile Include="Messaging\Customer\DeleteCustomerRequest.cs" />
+    <Compile Include="Messaging\Customer\DeleteCustomerResponse.cs" />
+    <Compile Include="Messaging\Customer\GetCustomerRequest.cs" />
+    <Compile Include="Messaging\Customer\GetCustomerResponse.cs" />
+    <Compile Include="Messaging\Customer\GetCustomersResponse.cs" />
+    <Compile Include="Messaging\Customer\InsertCustomerRequest.cs" />
+    <Compile Include="Messaging\Customer\InsertCustomerResponse.cs" />
+    <Compile Include="Messaging\Customer\UpdateCustomerRequest.cs" />
+    <Compile Include="Messaging\Customer\UpdateCustomerResponse.cs" />
+    <Compile Include="Messaging\IntegerIdRequest.cs" />
+    <Compile Include="Messaging\ServiceRequestBase.cs" />
+    <Compile Include="Messaging\ServiceResponseBase.cs" />
+    <Compile Include="ModelConversions\ConversionHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CustomerPropertiesViewModel.cs" />
+    <Compile Include="ViewModels\CustomerViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DDDSample.Domain\DDDSample.Domain.csproj">
+      <Project>{EC4C0119-0B1B-4EAD-9350-7D46D5DBB3A3}</Project>
+      <Name>DDDSample.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DDDSample.Infrastructure.Common\DDDSample.Infrastructure.Common.csproj">
+      <Project>{60D7A6EF-1869-412A-B123-9994AA97D4F0}</Project>
+      <Name>DDDSample.Infrastructure.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
