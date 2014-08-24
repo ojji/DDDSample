@@ -41,6 +41,7 @@
   <ItemGroup>
     <Compile Include="Customer\Customer.cs" />
     <Compile Include="Customer\CustomerBusinessRules.cs" />
+    <Compile Include="Customer\ICustomerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ValueObjects\Address.cs" />
     <Compile Include="ValueObjects\AddressBusinessRules.cs" />

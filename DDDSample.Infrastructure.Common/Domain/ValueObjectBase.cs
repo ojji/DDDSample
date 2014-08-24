@@ -17,7 +17,7 @@ namespace DDDSample.Infrastructure.Common.Domain
         {
             _brokenRules.Clear();
             Validate();
-            if (_brokenRules.Count() > 0)
+            if (_brokenRules.Count > 0)
             {
                 StringBuilder issues = new StringBuilder();
                 foreach (var businessRule in _brokenRules)

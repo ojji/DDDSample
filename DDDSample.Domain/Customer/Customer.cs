@@ -3,7 +3,7 @@ using DDDSample.Infrastructure.Common.Domain;
 
 namespace DDDSample.Domain.Customer
 {
-    public class Customer : EntityBase<int>
+    public class Customer : EntityBase<int>, IAggregateRoot
     {
         public string Name { get; set; }
         public Address CustomerAddress { get; set; }
