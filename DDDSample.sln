@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDSample.Infrastructure.Common", "DDDSample.Infrastructure.Common\DDDSample.Infrastructure.Common.csproj", "{60D7A6EF-1869-412A-B123-9994AA97D4F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDDSample.Domain", "DDDSample.Domain\DDDSample.Domain.csproj", "{EC4C0119-0B1B-4EAD-9350-7D46D5DBB3A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{60D7A6EF-1869-412A-B123-9994AA97D4F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60D7A6EF-1869-412A-B123-9994AA97D4F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60D7A6EF-1869-412A-B123-9994AA97D4F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC4C0119-0B1B-4EAD-9350-7D46D5DBB3A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4C0119-0B1B-4EAD-9350-7D46D5DBB3A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4C0119-0B1B-4EAD-9350-7D46D5DBB3A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4C0119-0B1B-4EAD-9350-7D46D5DBB3A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
